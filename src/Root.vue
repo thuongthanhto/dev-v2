@@ -17,7 +17,6 @@ const WalletsProvider = createProviderComponent(() => provideWallets());
 const GlobalProvider = createProviderComponent(() => {
   const userSettings = provideUserSettings();
   const tokenLists = provideTokenLists();
-  console.log('tokenLists', tokenLists);
   provideTokens(userSettings, tokenLists);
   provideUserData();
   provideCrossChainSync();

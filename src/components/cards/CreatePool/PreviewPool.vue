@@ -77,16 +77,15 @@ const title = computed((): string =>
 const initialWeightLabel = computed(() => t('initialWeight'));
 
 const tokenAddresses = computed((): string[] => {
-  return [];
-  // return seedTokens.value.map(token => {
-  //   if (
-  //     token.tokenAddress == wrappedNativeAsset.value.address &&
-  //     useNativeAsset.value
-  //   ) {
-  //     return nativeAsset.address;
-  //   }
-  //   return token.tokenAddress;
-  // });
+  return seedTokens.value.map(token => {
+    if (
+      token.tokenAddress == wrappedNativeAsset.value.address &&
+      useNativeAsset.value
+    ) {
+      return nativeAsset.address;
+    }
+    return token.tokenAddress;
+  });
 });
 
 const tokenAmounts = computed((): string[] => {
@@ -340,14 +339,14 @@ function getInitialWeightHighlightClass(tokenAddress: string) {
             {{ $t('createAPool.invalidInitialWeightsInfo') }}
           </BalAlert>
         </AnimatePresence>
-        <!-- <AnimatePresence :isVisible="showNativeAssetWarning" unmountInstantly>
+        <AnimatePresence :isVisible="showNativeAssetWarning" unmountInstantly>
           <BalAlert
             :title="$t('createAPool.invalidInitialWeightsTitle')"
             type="warning"
           >
             {{ $t('createAPool.nativeAssetWarning') }}
           </BalAlert>
-        </AnimatePresence> -->
+        </AnimatePresence>
 
         <CreateActions
           :createDisabled="actionsDisabled"

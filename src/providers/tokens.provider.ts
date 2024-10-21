@@ -311,7 +311,6 @@ export const tokensProvider = (
     }: { excluded?: string[]; disableInjection?: boolean; subset?: string[] }
   ): Promise<TokenInfoMap> {
     let tokensToSearch = subset.length > 0 ? getTokens(subset) : tokens.value;
-
     if (!query) return removeExcluded(tokensToSearch, excluded);
 
     tokensToSearch =

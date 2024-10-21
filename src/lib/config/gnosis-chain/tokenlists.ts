@@ -3,10 +3,10 @@ import { TokenListURLMap } from '@/types/TokenList';
 const tokenlists: TokenListURLMap = {
   Balancer: {
     Allowlisted:
-      'https://raw.githubusercontent.com/thuongthanhto/token-list/refs/heads/main/tokenlist.json',
+      'https://raw.githubusercontent.com/balancer/tokenlists/main/generated/balancer.tokenlist.json',
   },
   External: [
-    'https://raw.githubusercontent.com/thuongthanhto/token-list/refs/heads/main/tokenlist.json',
+    'https://unpkg.com/@1hive/default-token-list@latest/build/honeyswap-default.tokenlist.json',
   ],
 };
 

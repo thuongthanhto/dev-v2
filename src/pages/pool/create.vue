@@ -122,11 +122,11 @@ const steps = computed(() => [
     state: getStepState(1),
     label: 2,
   },
-  // {
-  //   tooltip: 'Similar pools',
-  //   state: StepState.Warning,
-  //   isVisible: doSimilarPoolsExist.value && activeStep.value === 2,
-  // },
+  {
+    tooltip: 'Similar pools',
+    state: StepState.Warning,
+    isVisible: doSimilarPoolsExist.value && activeStep.value === 2,
+  },
   {
     tooltip: 'Set initial liquidity',
     state: getStepState(3),
@@ -250,9 +250,9 @@ watch(
           v-else-if="activeStep === 0 && !hasRestoredFromSavedState"
         />
         <PoolFees v-else-if="activeStep === 1" />
-        <!-- <SimilarPools v-else-if="activeStep === 2 && similarPools.length > 0" /> -->
-        <InitialLiquidity v-else-if="!isLoading && activeStep === 2" />
-        <PreviewPool v-else-if="activeStep === 3" />
+        <SimilarPools v-else-if="activeStep === 2 && similarPools.length > 0" />
+        <InitialLiquidity v-else-if="!isLoading && activeStep === 3" />
+        <PreviewPool v-else-if="activeStep === 4" />
 
         <div v-if="upToLargeBreakpoint" class="pb-24">
           <BalAccordion
