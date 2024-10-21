@@ -143,6 +143,8 @@ export const tokensProvider = (
     (): TokenInfo => getToken(TOKENS.Addresses.wNativeAsset)
   );
 
+  debugger;
+
   /****************************************************************
    * Dynamic metadata
    *

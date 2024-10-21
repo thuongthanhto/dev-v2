@@ -10,8 +10,8 @@ const tokens: TokenConstants = {
   },
   Addresses: {
     nativeAsset: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
-    wNativeAsset: '0x7b79995e5f793A07Bc00c21412e50Ecae098E7f9',
-    WETH: '0x7b79995e5f793A07Bc00c21412e50Ecae098E7f9',
+    wNativeAsset: '0x5e657b5bB33EF2a07C13E759388dE20D0f097c34',
+    WETH: '0x5e657b5bB33EF2a07C13E759388dE20D0f097c34',
     BAL: '0xb19382073c7A0aDdbb56Ac6AF1808Fa49e377B75',
     bbaUSD: '',
     bbaUSDv2: '',
@@ -26,7 +26,7 @@ const tokens: TokenConstants = {
      * [sepolia address]: mainnet address
      */
     // WETH
-    '0x7b79995e5f793a07bc00c21412e50ecae098e7f9':
+    '0x5e657b5bB33EF2a07C13E759388dE20D0f097c34':
       '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2',
     // BAL
     '0xb19382073c7a0addbb56ac6af1808fa49e377b75':
@@ -41,13 +41,13 @@ const tokens: TokenConstants = {
     '0xda9d4f9b69ac6c22e444ed9af0cfc043b7a7f53f':
       '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
     // USDT
-    '0x0bd5f04b456ab34a2ab3e9d556fe5b3a41a0bc8d':
+    '0xc1c7B27362E51fa348ceBaE557883f7CFFDF29F6':
       '0xdac17f958d2ee523a2206206994597c13d831ec7',
     // AAVE
     '0x5bb220afc6e2e008cb2302a83536a019ed245aa2':
       '0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9',
     // LINK
-    '0x8a0e31de20651fe58a369fd6f76c21a8ff7f8d42':
+    '0x779877A7B0D9E8603169DdbD7836e478b4624789':
       '0x514910771af9ca656af840dff83e8264ecf986ca',
     // WBTC
     '0xf864f011c5a97fd8da79baed78ba77b47112935a':

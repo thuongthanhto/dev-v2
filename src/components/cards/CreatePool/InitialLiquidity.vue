@@ -170,6 +170,7 @@ function handleAddressChange(newAddress: string): void {
 }
 
 function tokenOptions(index: number): string[] {
+  debugger;
   if (
     isSameAddress(tokenAddresses.value[index], wrappedNativeAsset.value.address)
   )
