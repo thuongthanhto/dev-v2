@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const fs = require('fs');
 
-const baseUrl = 'https://raw.githubusercontent.com/balancer/metadata/main';
+const baseUrl = 'https://raw.githubusercontent.com/thuongthanhto/metadata/main';
 const filesToFetch = [
   '/pools/mainnet.json',
   '/pools/zkevm.json',

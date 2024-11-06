@@ -143,8 +143,6 @@ export const tokensProvider = (
     (): TokenInfo => getToken(TOKENS.Addresses.wNativeAsset)
   );
 
-  debugger;
-
   /****************************************************************
    * Dynamic metadata
    *
@@ -312,6 +310,10 @@ export const tokensProvider = (
       subset = [],
     }: { excluded?: string[]; disableInjection?: boolean; subset?: string[] }
   ): Promise<TokenInfoMap> {
+    console.log('nativeAsset', nativeAsset);
+    console.log('allTokenListTokens', allTokenListTokens.value);
+    console.log('injectedTokens', state.injectedTokens);
+    debugger;
     let tokensToSearch = subset.length > 0 ? getTokens(subset) : tokens.value;
     if (!query) return removeExcluded(tokensToSearch, excluded);
 

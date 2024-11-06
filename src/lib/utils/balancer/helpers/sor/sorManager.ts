@@ -163,6 +163,8 @@ export class SorManager {
       swapOptions
     );
 
+    debugger;
+
     // Both are scaled amounts
     console.log(
       `[SorManager] ${swapInfoV2.returnAmount.toString()}: V2 return amount`

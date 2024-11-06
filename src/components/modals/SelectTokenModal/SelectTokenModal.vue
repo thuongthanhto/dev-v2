@@ -144,8 +144,6 @@ watchEffect(() => {
 
   if (Enter.value) onSelectToken(focussedTokenAddress.value);
 });
-
-console.log('tokens.length', tokens.value.length);
 </script>
 
 <template>
